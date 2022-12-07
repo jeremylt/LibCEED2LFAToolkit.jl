@@ -41,33 +41,17 @@ tensor product basis:
 ```
 """
 function converttensorbasis(ceedbasis::CeedBasis)
-    # basis properties
-    numbernodes1d = Int(getnumnodes1d(ceedbasis))
-    numberquadraturepoints1d = Int(getnumqpts1d(ceedbasis))
-    numbercomponents = Int(getnumcomponents(ceedbasis))
-    dimension = Int(getdimension(ceedbasis))
-
-    # copy libCEED basis arrays
-    quadraturepoints1d = zeros(numberquadraturepoints1d)
-    quadraturepoints1d .= getqref(ceedbasis)[1:Int(getnumqpts1d(ceedbasis))]
-    quadratureweights1d = zeros(numberquadraturepoints1d)
-    quadratureweights1d .= getqweights(ceedbasis)[1:Int(getnumqpts1d(ceedbasis))]
-    interpolation1d = zeros(numberquadraturepoints1d, numbernodes1d)
-    interpolation1d .= getinterp1d(ceedbasis)
-    gradient1d = zeros(numberquadraturepoints1d, numbernodes1d)
-    gradient1d .= getgrad1d(ceedbasis)
-
-    # create LFAToolkit basis
     LFATensorBasis(
-        numbernodes1d,
-        numberquadraturepoints1d,
-        numbercomponents,
-        dimension,
-        LinRange(-1, 1, numbernodes1d),
-        quadraturepoints1d,
-        quadratureweights1d,
-        interpolation1d,
-        gradient1d;
+        Int(getnumnodes1d(ceedbasis)),
+        Int(getnumqpts1d(ceedbasis)),
+        Int(getnumcomponents(ceedbasis)),
+        Int(getdimension(ceedbasis)),
+        LinRange(-1, 1, Int(getnumnodes1d(ceedbasis))),
+        # note: these values are copies of the internal libCEED data
+        getqref(ceedbasis)[1:Int(getnumqpts1d(ceedbasis))],
+        getqweights(ceedbasis)[1:Int(getnumqpts1d(ceedbasis))],
+        getinterp1d(ceedbasis),
+        getgrad1d(ceedbasis);
         numberelements1d = 1,
     )
 end

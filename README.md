@@ -1,6 +1,11 @@
 # libCEED2LFAToolkit
 
-Convert LibCEED.jl objects into LFAToolkit objects
+[![CI Status](https://github.com/jeremylt/LibCEED2LFAToolkit.jl/workflows/Tests/badge.svg)](https://github.com/jeremylt/LFAToolkit.jl/actions)
+[![CodeCov](https://codecov.io/gh/jeremylt/LibCEED2LFAToolkit.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/jeremylt/LibCEED2LFAToolkit.jl)
+[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+[![Documentation](https://img.shields.io/badge/docs-dev-blue)](https://jeremylt.github.io/LibCEED2LFAToolkit.jl/dev/)
+
+Convert LibCEED.jl objects into LFAToolkit.jl objects
 
 ## Introduction
 

@@ -1,0 +1,10 @@
+[deps]
+Documenter = "e30172f5-a6a5-5a46-863b-614d45cd2de4"
+DocumenterTools = "35a29f4d-8980-5a13-9543-d66fff28ecb8"
+LFAToolkit = "3f92b583-c0aa-4596-8bdf-f02f6c0a52df"
+LibCEED = "2cd74e05-b976-4426-91fa-5f1011f8952b"
+LibCEED2LFAToolkit = "61e60817-c62c-46c6-8fbb-8410bece4e13"
+
+[compat]
+Documenter = "0.27.23"
+DocumenterTools = "0.1.16"

@@ -1,11 +1,11 @@
 # libCEED2LFAToolkit
 
-Convert libCEED.jl objects into LFAToolkit objects.
+Convert LibCEED.jl objects into LFAToolkit objects
 
 ## Introduction
 
 
-This package provides utilities for converting libCEED.jl objects into LFAToolkit.jl objects to facilitate easier analysis of libCEED.jl operators.
+This package provides utilities for converting LibCEED.jl objects into LFAToolkit.jl objects to facilitate easier analysis of LibCEED.jl operators.
 
 ## Installing
 
@@ -18,12 +18,12 @@ $ julia --project -e 'using Pkg; Pkg.build();'
 To install and test, run
 
 ```
-$ julia --project -e 'using Pkg; Pkg.build(); Pkg.test("LFAToolkit")'
+$ julia --project -e 'using Pkg; Pkg.build(); Pkg.test("LibCEED2LFAToolkit")'
 ```
 
 ## Examples
 
-Examples can be found in the ``examples`` directory, with interactive examples in Jupyter notebooks found in the ``examples/jupyter`` directory.
+Examples can be found in the ``examples`` directory.
 
 ## Documentation
 

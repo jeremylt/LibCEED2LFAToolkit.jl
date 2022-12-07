@@ -9,9 +9,10 @@ converttensorbasis(ceedbasis)
 
 Convert a tensor product basis
 
-Note: LibCEED.jl does not provide an accessor for nodes; however, LFAToolkit.jl currently does not use the basis nodes.
-This function passes in `numnodes1d` linearly spaced nodes.
-If LFAToolkit.jl makes changes to use the nodal locations in the future, then an accesor for this data will need to be added to libCEED and LibCEED.jl.
+Note: LFAToolkit.jl currently does not use the basis nodes but the `Basis` constructors require these values.
+LibCEED.jl does not store or provide an accessor for nodes.
+This function passes in an array of `numnodes1d` linearly spaced nodes between `[-1.0, 1.0]`.
+If LFAToolkit.jl makes changes to use the nodal locations in the future, then any related functionality will not work unless storage and an accesor for these values is added to libCEED and LibCEED.jl.
 
 # Arguments:
 

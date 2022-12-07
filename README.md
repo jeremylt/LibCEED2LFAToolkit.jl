@@ -1,4 +1,4 @@
-# libCEED2LFAToolkit
+# LibCEED2LFAToolkit
 
 [![CI Status](https://github.com/jeremylt/LibCEED2LFAToolkit.jl/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/jeremylt/LibCEED2LFAToolkit.jl/actions/workflows/test.yml)
 [![CodeCov](https://codecov.io/gh/jeremylt/LibCEED2LFAToolkit.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/jeremylt/LibCEED2LFAToolkit.jl)

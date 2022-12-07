@@ -1,7 +1,7 @@
 # LibCEED2LFAToolkit
 
 [![CI Status](https://github.com/jeremylt/LibCEED2LFAToolkit.jl/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/jeremylt/LibCEED2LFAToolkit.jl/actions/workflows/test.yml)
-[![CodeCov](https://codecov.io/gh/jeremylt/LibCEED2LFAToolkit.jl/branch/master/graph/badge.svg)](https://codecov.io/gh/jeremylt/LibCEED2LFAToolkit.jl)
+[![CodeCov](https://codecov.io/gh/jeremylt/LibCEED2LFAToolkit.jl/branch/main/graph/badge.svg?token=6OKYJIWX2E)](https://codecov.io/gh/jeremylt/LibCEED2LFAToolkit.jl)
 [![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
 [![Documentation](https://img.shields.io/badge/docs-dev-blue)](https://jeremylt.github.io/LibCEED2LFAToolkit.jl/dev/)
 

@@ -1,0 +1,22 @@
+name: Style tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  styletest:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        julia-version: ['1']
+    steps:
+      - name: Environment setup
+        uses: actions/checkout@v3
+      - name: Julia setup
+        uses: julia-actions/setup-julia@latest
+        with:
+          version: ${{ matrix.julia-version }}
+      - name: Check style
+        run: julia .Style.jl --color=yes && git diff --exit-code src test examples docs

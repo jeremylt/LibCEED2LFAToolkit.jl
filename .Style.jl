@@ -10,6 +10,6 @@ using JuliaFormatter
 # run JuliaFormatter
 # ------------------------------------------------------------------------------
 
-format(["src", "test", "docs"], format_docstrings = true)
+format(["src", "test", "examples", "docs"], format_docstrings = true)
 
 # ------------------------------------------------------------------------------

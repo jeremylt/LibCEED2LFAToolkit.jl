@@ -19,4 +19,4 @@ jobs:
         with:
           version: ${{ matrix.julia-version }}
       - name: Check style
-        run: julia .Style.jl --color=yes && git diff --exit-code src test docs
+        run: julia .Style.jl --color=yes && git diff --exit-code src test examples docs

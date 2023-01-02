@@ -52,8 +52,8 @@ function converttensorbasis(ceedbasis::CeedBasis)
         Int(getdimension(ceedbasis)),
         LinRange(-1, 1, Int(getnumnodes1d(ceedbasis))),
         # note: these values are copies of the internal libCEED data
-        getqref(ceedbasis)[1:Int(getnumqpts1d(ceedbasis))],
-        getqweights(ceedbasis)[1:Int(getnumqpts1d(ceedbasis))],
+        getqref(ceedbasis),
+        getqweights(ceedbasis),
         getinterp1d(ceedbasis),
         getgrad1d(ceedbasis);
         numberelements1d = 1,

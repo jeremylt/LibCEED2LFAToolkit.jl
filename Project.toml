@@ -9,7 +9,7 @@ LibCEED = "2cd74e05-b976-4426-91fa-5f1011f8952b"
 
 [compat]
 LFAToolkit = "0.6.0"
-LibCEED = "0.1.2"
+LibCEED = "0.2"
 julia = "1.6"
 
 [extras]
